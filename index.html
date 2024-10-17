@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test de Comprensión Lectora</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2 id="titleInit">Test Número 13</Nav></h2>
+        <p id="paragraphInit">
+            Este test busca medir tu velocidad y comprensión
+            lectora.<br>
+            Te recomendamos que lo hagas en un ambiente
+            calmado, sin distracciones y con buena iluminación.<br>
+            Esta lectura la debes hacer basado en las técnicas
+            que ya hayas empezado a usar. En las primeras
+            semanas, no debes preocuparte mucho por la
+            comprensión lectora, ya que ese es un proceso que se
+            va a ir dando paulatinamente.<br>
+            Cuando des clic en INICIAR se te presentará la lectura
+            y el sistema llevará un cronómetro que medirá tu
+            velocidad. Al finalzar de leer todo el texto debes dar
+            clic en el botón TERMINAR.<br>
+        </p>
+        <button id="startButton">Iniciar</button>
+        <div id="textContainer" class="hidden">
+            <p id="textToRead">
+                Caja de cartón
+                <br><br>
+                Cuando nací, mamá me metió en una caja de cartón, una de esas cajas donde guardan sus zapatos quienes tienen zapatos. Aquella caja era mi cuna, mi habitación, mi casa, las paredes que amortiguaban el llanto de mamá…
+                <br><br>
+                Pocas semanas después, mamá gastó todos sus ahorros, compró un billete para una embarcación que nos debía llevar a una tierra donde las niñas no duermen en cajas ni las mamás lloran.
+                <br><br>
+                Zarpamos de madrugada. El segundo día nos sorprendió una tormenta. El barco escoró, entró agua por la cubierta y se fue a pique. Mamá nadó desesperadamente hacia la costa, tirando de mi pequeña balsa de cartón. Sus paredes apenas me permitieron oír los gritos de quienes no sabían nadar. Llegamos a una playa solitaria. Mamá y yo, nadie más.
+                <br><br>
+                La marea se llevó mi caja mar adentro. Ya nada silenciaba el llanto de mamá. Vagamos durante varios días con la esperanza de encontrar una cara conocida, algún compañero de nuestra malograda travesía. Dormíamos a cielo abierto hasta que encontramos una enorme caja de cartón.
+                <br><br>
+                La caja se convirtió en nuestra cama, nuestra habitación, nuestra casa, las paredes que cobijaban nuestro llanto. Comiendo raíces aprendimos que, estés donde estés, el sabor de la tierra es siempre parecido. Yo no sé bien por qué, pero eso nos reconfortaba. Cada noche recorríamos las basuras en busca de alguna patata o algún tomate.
+                <br><br>
+                En una de aquellas salidas, mamá reconoció a una mujer que había viajado en nuestro barco, se abrazaron, lloraron, se preguntaron por los demás… Y las dos respondieron con un movimiento triste de cabeza. Aquella noche, nuestra nueva amiga, Aihala, trasladó su caja de cartón junto a la nuestra. Además de cobijar nuestro llanto, ahora las cajas también hacían resonar nuestra risa, parecía imposible pero, a pesar de todo, no se nos había olvidado reír.
+                <br><br>
+                Pasaron varias lunas. Nuevas amigas se acercaron con sus cajas de cartón, juntas nos sentíamos seguras, incluso felices, porque, como decía mamá: "Cuando las penas se comparten, las lágrimas son más pequeñas".
+                <br><br>
+                Alrededor de nuestra caja había nacido un pueblo de cartón, pobre pero alegre. Reíamos entre nosotras, y también sonreíamos a los desconocidos, algunos nos devolvían la sonrisa, pero no todos eran amables con nosotras.
+                <br><br>
+                Hasta hubo quien jugó con fuego; sucedió bien entrada la noche, una noche que jamás se borrará de mi memoria. El fuego se extendió por el pueblo de cartón y todas las cajas ardieron. Nada pudo silenciar nuestros gritos de dolor. Nunca volví a ver a mamá, a Aihala, tampoco.
+                <br><br>
+                Me llevaron a un orfanato, y después quisieron que volviera a mi país; pero en mi país nadie sabía de mí y aquí nadie parecía saber de mi país.
+                <br><br>
+                Finalmente me adoptaron y, al cabo de un tiempo, volví a sonreír. Parece imposible pero, a pesar de todo, no se me había olvidado sonreír, ahora soy feliz junto a mi nueva mamá; yo la quiero y ella me quiere, me quiere tal como soy.
+                <br><br>
+                Vivo en una casa, tengo mi habitación, mi cama, mi armario, y en el armario tengo una caja de cartón; una de esas cajas donde guardamos los zapatos quienes tenemos zapatos. Pero en mi caja no hay zapatos, sino recuerdos, porque no quiero olvidar, no quiero olvidar el llanto de mamá, y tampoco su sonrisa.
+                <br><br>
+                https://www.encuentos.com/cuentos-de-madres/caja-de-carton/ - escritor Txabi Arnal Gil 552 palabras
+            </p>
+                   
+                   
+            <div id="timer">Tiempo transcurrido: <span id="timerValue">0</span> segundos</div>
+            <button id="finishButton">Terminar</button>
+        </div>
+        <div id="questionnaire" class="hidden">
+            <h2>Test de Comprensión Lectora</h2>
+            <form id="quizForm">
+                <ol id="questionList">
+                    <!-- Las preguntas se añadirán aquí dinámicamente con JavaScript -->
+                </ol>
+                <button type="submit">Terminar</button>
+            </form>
+        </div>
+        <div id="results" class="hidden">
+            <h2>Resultados</h2>
+            <div id="wordCount">Palabras leídas: <span id="wordCountValue"></span></div>
+            <div id="readingSpeed">Velocidad de lectura: <span id="readingSpeedValue"></span> palabras por minuto</div>
+            <div id="comprehension">Comprensión lectora: <span id="comprehensionValue"></span>%</div>
+            <div id="timeResult">Tiempo transcurrido: <span id="timeResultValue"></span> segundos</div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
